@@ -3,6 +3,37 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #f0e7da; 
+  border-bottom: #000000;
+}
+
+.letter-red {
+  color: #94412f;
+}
+
+.letter-orange {
+  color: #d16644;
+}
+
+.letter-green {
+  color: #68b2a0;
+}
+
+.letter-blue {
+  color: #4f6c8a;
+}
+
+.navbar {
+  background-color: #f0e7da;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.jumbotron {
+  background-color: #f0e7da;
+}
+
+.main-title {
+  font-family: 'Maven Pro', sans-serif;
 }
 
 .save-note {
@@ -18,10 +49,15 @@ body {
 
 .note-textarea,
 .note-title {
+  background-color: #f0e7da;
   color: #000000;
   width: 100%;
   outline: none;
   border: none;
+}
+
+.note-title {
+  font-family: 'Maven Pro', sans-serif;
 }
 
 .note-textarea {
@@ -42,6 +78,7 @@ body {
 }
 
 .list-container .card {
+  background-color: #f0e7da;
   height: calc(100vh - 70px);
   border-bottom: none;
   border-bottom-right-radius: 0;
