@@ -1,5 +1,8 @@
 // dependecies - bring in express
 const express = require('express'); 
+const path = require('path');
+// route folder
+const api = require('./routes/index.js');
 // to initialise express
 const app = express(); 
 
@@ -15,8 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 // to gain access to public folder
 app.use(express.static('public')); 
 
-// to get route to api - should read db.json, return all saved notes as json
-app.use('/api/notes', api);
+app.use('/api', api);
 
 
 
