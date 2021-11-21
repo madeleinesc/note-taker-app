@@ -1,5 +1,5 @@
 const fs = require('fs');
-const util = require('../helpers/fsUtils.js');
+const util = require('util');
 
 // fs.readFile (Promises)
 const readFromFile = util.promisify(fs.readFile);

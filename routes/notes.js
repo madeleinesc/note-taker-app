@@ -9,7 +9,7 @@ const uuid = require('../helpers/uuid.js');
 // GET route for retrieving notes
 notes.get('/', (req, res) =>
 // to read notes in db.json
-  readFromFile('../db/db.json').then((data) => res.json(JSON.parse(data)))
+  readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
 );
 
 
@@ -25,7 +25,7 @@ notes.post('/', (req, res) => {
       };
   
       // to add new note to db.json
-      readAndAppend(newNote, '../db/db.json');
+      readAndAppend(newNote, './db/db.json');
   
       const response = {
         status: 'success',
@@ -45,7 +45,7 @@ notes.delete('/:id', (req, res) => {
     // const created for uuid with the parameter of id
     const noteId = req.params.id;
     // to read all current notes within db.json
-    readFromFile('../db/db.json').then((data) => res.json(JSON.parse(data)))
+    readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
 
     // to let the user know the note has been deleted
     res.json(`${noteId} has been successfully deleted!`);
