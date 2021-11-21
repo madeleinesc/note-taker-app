@@ -8,6 +8,7 @@ const uuid = require('../helpers/uuid.js');
 
 // GET route for retrieving notes
 notes.get('/', (req, res) =>
+// to read notes in db.json
   readFromFile('../db/db.json').then((data) => res.json(JSON.parse(data)))
 );
 
@@ -23,6 +24,7 @@ notes.post('/', (req, res) => {
         id: uuid(),
       };
   
+      // to add new note to db.json
       readAndAppend(newNote, '../db/db.json');
   
       const response = {
@@ -32,13 +34,22 @@ notes.post('/', (req, res) => {
   
       res.json(response);
     } else {
-      res.json('Oops! Unable to save note!');
+    // if note cannot be save in db.json
+      res.error('Oops! Unable to save note!');
     }
   });
 
 
 // DELETE route for deleting saved notes
+notes.delete('/:id', (req, res) => {
+    // const created for uuid with the parameter of id
+    const noteId = req.params.id;
+    // to read all current notes within db.json
+    readFromFile('../db/db.json').then((data) => res.json(JSON.parse(data)))
 
+    // to let the user know the note has been deleted
+    res.json(`${noteId} has been successfully deleted!`);
+});
 
 
 
