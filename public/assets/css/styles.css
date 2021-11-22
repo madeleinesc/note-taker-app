@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f0e7da; 
-  border-bottom: #000000;
 }
 
 .letter-red {
@@ -92,6 +91,7 @@ body {
 .list-container .list-group,
 .list-container .list-group-item:first-child,
 .list-container .card {
+  background-color: #f0e7da;
   border-top: none;
   border-top-right-radius: 0;
   border-top-left-radius: 0;

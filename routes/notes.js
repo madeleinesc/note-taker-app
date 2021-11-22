@@ -1,5 +1,6 @@
 // dependencies
 const notes = require('express').Router();
+const { readFromFile } = require('../helpers/fsUtils')
 const { readAndAppend } = require('../helpers/fsUtils');
 
 // to get unique id's
