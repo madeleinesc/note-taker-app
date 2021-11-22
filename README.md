@@ -34,6 +34,8 @@ See below screenshots of the homepage and main page as well as a gif showing the
 
 ![gif of note taker in action](./images/notetaker.gif)
 
+To see the deployed note taker on Heroku visit: https://immense-bastion-97694.herokuapp.com/
+
 
 # Questions
 If you have any queries or questions in relation to this application, please send to madeleine.codes@gmail.com.
