@@ -41,15 +41,6 @@ notes.post('/', (req, res) => {
   });
 
 
-// DELETE route for deleting saved notes
-notes.delete('/:id', (req, res) => {
-    // const created for uuid with the parameter of id
-    const noteId = req.params.id;
-    // to read all current notes within db.json
-    readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
-
-});
-
 
 
 // export module
