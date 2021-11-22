@@ -7,7 +7,7 @@ const api = require('./routes/index.js');
 const app = express(); 
 
 // set port to listen to requests - use with Heroku
-const PORT = process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 
 
 
