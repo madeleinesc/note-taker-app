@@ -48,8 +48,6 @@ notes.delete('/:id', (req, res) => {
     // to read all current notes within db.json
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
 
-    // to let the user know the note has been deleted
-    res.json(`${noteId} has been successfully deleted!`);
 });
 
 
