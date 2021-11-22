@@ -24,7 +24,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
   
 
 # Usage
-This application is a useful little tool for a user wanting to keep themselves organised! At homepage, the user will click on the get started button and will delivered to the main notes page. Here, they can enter a new note title and note body and then press the save button at the top right hand side to see their note saved in the left column. To add another note, the user just needs to click the plus sign (top right corner) and enter in their new details.
+This application is a useful little tool for a user wanting to keep themselves organised! At homepage, the user will click on the get started button and will be delivered to the main notes page. Here, they can enter a new note title and note body and then press the save button at the top right hand side to see their note saved in the left column. To add another note, the user just needs to click the plus sign (top right corner) and enter in their new details.
 
 See below screenshots of the homepage and main page as well as a gif showing the app in action! 
 
@@ -38,7 +38,7 @@ To see the deployed note taker on Heroku visit: https://immense-bastion-97694.he
 
 
 # Questions
-If you have any queries or questions in relation to this application, please send to madeleine.codes@gmail.com.
+If you have any queries or questions in relation to this application, please send them to madeleine.codes@gmail.com.
 
 # Credits
 https://github.com/madeleinesc
