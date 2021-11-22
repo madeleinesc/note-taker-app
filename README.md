@@ -32,6 +32,8 @@ See below screenshots of the homepage and main page as well as a gif showing the
 
 ![mainpage for note taker app](./images/mainpage.png)
 
+![gif of note taker in action](./images/notetaker.gif)
+
 
 # Questions
 If you have any queries or questions in relation to this application, please send to madeleine.codes@gmail.com.
